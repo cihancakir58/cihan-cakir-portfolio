@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Ayet Yolu",
+    "type": "Mobil Uygulama",
+    "description": "Kur'an-ı Kerim, namaz vakitleri, kıble pusulası, zikirmatik ve günlük duaları tek uygulamada buluşturan kapsamlı bir İslami rehber.",
+    "technologies": ["Flutter", "Firebase", "iOS", "Android"],
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/69/7a/f2697a4a-7b29-a832-1483-4f6452192fa1/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+    "stores": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/tr/app/ayet-yolu/id6759738706?l=tr",
+        "platform": "ios"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.ayetyolu.app",
+        "platform": "android"
+      }
+    ]
+  },
+  {
+    "name": "ABC English: Learn & Play",
+    "type": "Egitici Mobil Uygulama",
+    "description": "Cocuklar icin hazirlanmis; seslendirmeler, iz takip etkinlikleri ve mini oyunlarla Ingilizce ogretimini eglenceli hale getiren erken ogrenme uygulamasi.",
+    "technologies": ["Flutter", "iPadOS", "iOS", "Egitim"],
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/0e/4b/340e4baa-9b57-1e4a-e63b-0ca440ac4ee2/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+    "stores": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/tr/app/abc-english-learn-play/id6762567140?l=tr",
+        "platform": "ios"
+      }
+    ]
+  },
+  {
+    "name": "oXoX - UcTas Tictactoe",
+    "type": "Mobil Oyun",
+    "description": "Klasik XOX ve geleneksel UcTas deneyimini cevrimici eslesme, yapay zeka modlari ve ozellestirilebilir gorunumlerle birlestiren modern mobil oyun.",
+    "technologies": ["Flutter", "Firebase", "iOS", "Android"],
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/66/bc/6a66bc0e-dc70-77bf-8910-5b33f86b2d54/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "stores": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/tr/app/oxox-%C3%BC%C3%A7ta%C5%9F-tictactoe/id6760368445?l=tr",
+        "platform": "ios"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.oxox.app",
+        "platform": "android"
+      }
+    ]
+  },
+  {
+    "name": "Matemix - Matematik Oyunu",
+    "type": "Mobil Oyun",
+    "description": "Dort islem hizini gelistirmeye odaklanan, sure baskisi ve skor takibiyle matematik pratigini oyuna donusturen eglenceli bir bilgi yarismasi.",
+    "technologies": ["Flutter", "Android", "Egitim", "Oyun"],
+    "icon": "https://play-lh.googleusercontent.com/-NeprFi4_YkTPTjZ3i5NjTphaMgowAx69PQbRb8nI6WH_By-8kL-w49fB7BmeEm15Ja_Zd8WhUA7DLpSWpFzOQ",
+    "stores": [
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.matemanya.app",
+        "platform": "android"
+      }
+    ]
+  },
+  {
+    "name": "Sivascu Sozluk Soru Cevap",
+    "type": "Web Sitesi",
+    "description": "Universite gencligi odakli; sozluk, soru-cevap ve topluluk etkilesimini bir araya getiren icerik tabanli web platformu.",
+    "technologies": ["WordPress", "Topluluk", "Icerik", "SEO"],
+    "icon": "https://sivascu.com/wp-content/uploads/2025/12/512x512-300x300.png",
+    "stores": [
+      {
+        "label": "Siteyi Ac",
+        "url": "http://sivascu.com",
+        "platform": "web"
+      }
+    ]
+  },
+  {
+    "name": "Bildiren Blog",
+    "type": "Web Sitesi",
+    "description": "Blog icerigi, kategori yapisi ve reklam entegrasyonlariyla kurgulanmis; guncel icerik yayini icin hazirlanan medya ve yazi platformu.",
+    "technologies": ["WordPress", "Blog", "Ads", "Icerik"],
+    "icon": "https://cbilgin.com/wp-content/uploads/2025/12/logo-1.png",
+    "stores": [
+      {
+        "label": "Siteyi Ac",
+        "url": "https://cbilgin.com",
+        "platform": "web"
+      }
+    ]
+  },
+  {
+    "name": "JSP Sinav",
+    "type": "Web Uygulamasi",
+    "description": "Sinav ve quiz yonetimi icin hazirlanmis; giris paneli, yonetim ekranlari ve olceklenebilir test altyapisina sahip egitim platformu.",
+    "technologies": ["PHP", "Bootstrap", "Quiz", "Yonetim Paneli"],
+    "icon": "https://jspsinav.com/images/17054887961.svg",
+    "stores": [
+      {
+        "label": "Siteyi Ac",
+        "url": "https://jspsinav.com",
+        "platform": "web"
+      }
+    ]
+  }
+]
