@@ -4,13 +4,13 @@ import { RiContactsFill } from "react-icons/ri";
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
 import Social from "./Social";
-import pdf from '../../../public/Mahmudul_Hasan_Rifat_Resume.pdf'
+import pdf from '../../../public/cihan-cakir-ozgecmis.pdf'
 
 const BannerText = () => {
     return (
         <div>
                 <h1 className="flex items-center space-x-2 text-xl mb-3">
-                    <span className="text-pink-500">Hi There, </span>
+                    <span className="text-cyan-300">Merhaba, </span>
                     <span>
                         <motion.div
                             animate={{
@@ -22,7 +22,7 @@ const BannerText = () => {
                             ease: "easeInOut", // Smooth easing
                             }}
                         >
-                            <MdWavingHand className="text-[#FAD76B] text-2xl" />
+                            <MdWavingHand className="text-sky-200 text-2xl" />
                         </motion.div>
                     </span> 
                 </h1>
@@ -30,10 +30,10 @@ const BannerText = () => {
             <div className="text-5xl font-russo">
                 
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <h1 className="mb-3">I'm Rifat</h1>
+                <h1 className="mb-3">Ben Cihan ÇAKIR</h1>
 
                 <Typewriter
-                        words={['Mern Stack Developer', 'FullStack Developer', 'Frontend Developer', 'React Developer']}
+                        words={['Mobil Geliştirici', 'Web Geliştirici', 'Google Maps Kurulum', 'Ads Yönetimi']}
                         loop={true}
                         cursor
                         cursorStyle='_'
@@ -50,16 +50,16 @@ const BannerText = () => {
 
             <div className="flex items-center space-x-4 mt-5">
                 <a href="#contactMe">
-                    <button className="flex items-center space-x-2 py-3 px-4 bg-gradient-to-r from-[#32116d] via-[#32116d] to-[#695582] text-white font-semibold rounded-lg">
-                        <span>Contact Me</span>
+                    <button className="flex items-center space-x-2 rounded-xl border border-cyan-300/25 bg-gradient-to-r from-[#0f2234] via-[#12324a] to-[#15546b] px-5 py-3 text-white font-semibold shadow-[0_12px_30px_rgba(0,0,0,0.22)]">
+                        <span>İletişime Geç</span>
                         <span><RiContactsFill></RiContactsFill></span>
                     </button>
                 </a>
 
                 <div>
                     <a href={pdf} download>
-                        <button className="flex items-center space-x-2 py-3 px-4 bg-gradient-to-r from-[#32116d] via-[#32116d] to-[#695582] text-white font-semibold rounded-lg">
-                            <span>Download Resume</span>
+                        <button className="flex items-center space-x-2 rounded-xl border border-cyan-300/25 bg-gradient-to-r from-[#0c2838] via-[#13465d] to-[#1d7186] px-5 py-3 text-white font-semibold shadow-[0_12px_30px_rgba(0,0,0,0.22)]">
+                            <span>Özgeçmişi İndir</span>
                             <span><FaDownload></FaDownload></span>
                         </button>
                     </a>

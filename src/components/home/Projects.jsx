@@ -18,8 +18,8 @@ const Projects = () => {
             
             <div className="max-w-[90%] xl:max-w-[1200px] mx-auto">
 
-                <h1 className="text-center text-5xl font-bold">My Recent <span className="text-[#5c29b4]">Work</span></h1>
-                <p className="text-center mt-2 text-lg text-gray-300 mb-8">Something I have build</p>
+                <h1 className="text-center text-5xl font-bold">Projelerim ve <span className="text-[#5c29b4]">Yayınlarım</span></h1>
+                <p className="text-center mt-2 text-lg text-gray-300 mb-8">Mobil uygulamalar, web siteleri ve yayında olan dijital ürünlerim tek alanda.</p>
 
                 <div className="flex flex-col gap-12">
                     {

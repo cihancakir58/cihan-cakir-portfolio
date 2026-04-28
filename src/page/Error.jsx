@@ -2,7 +2,7 @@
 const Error = () => {
     return (
         <div>
-            <h1>This is error page</h1>
+            <h1>Bu sayfa bulunamadi.</h1>
         </div>
     )
 }

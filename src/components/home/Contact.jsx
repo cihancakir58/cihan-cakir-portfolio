@@ -28,17 +28,17 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm(
-            "service_gb4f75k",
-            "template_dqm4ghv",
+            "service_fefz9ps", // Service ID
+            "template_8dg1gd9", // Template ID
             form.current,
-            "8WM6YdjQ83SHQvdRJ"
+            "Vdm-CQocif4qr6r-1"
         )
         .then(() => {
-            toast.success("Message sent successfully!");
+            toast.success("Mesaj başarıyla gönderildi!");
         })
         .catch((error) => {
             console.log("Email sending failed!", error.text);
-            toast.error("Failed to send message.");
+            toast.error("Mesaj gönderilemedi.");
         });
 
         e.target.reset();
@@ -48,8 +48,8 @@ const Contact = () => {
         <section id="contactMe" className="pb-16 -mt-10 max-w-[90%] xl:max-w-[1200px] mx-auto">
             
             <div>
-                <h1 className="text-center text-5xl font-bold">Contact<span className="text-[#5c29b4]"> Me</span></h1>
-                <p className="text-center mt-4 text-lg text-gray-300 max-w-[90%] sm:max-w-xl mx-auto">If you have any questions or concerns, please do not hesitate to contact me. I am open to any work opportunities that align with my skills and interests.</p>
+                <h1 className="text-center text-5xl font-bold">İletişim<span className="text-cyan-300"> Bilgileri</span></h1>
+                <p className="text-center mt-4 text-lg text-gray-300 max-w-[90%] sm:max-w-xl mx-auto">Proje, iş birliği veya hizmet talepleriniz için benimle iletişime geçebilirsiniz.</p>
             </div>
 
             <div className="flex lg:flex-row flex-col gap-10 mt-10">
@@ -60,9 +60,9 @@ const Contact = () => {
                         <div className="flex sm:flex-row flex-col gap-8 mb-5">
                             <div className="sm:w-[50%]">
                                 <input 
-                                className="w-full p-3 rounded-md bg-[#80808018] text-white placeholder:text-gray-400 border border-gray-800" 
+                                className="w-full rounded-xl border border-cyan-300/15 bg-[#0b2333]/70 p-3 text-white placeholder:text-slate-400" 
                                 type="text"
-                                 placeholder="Enter Your Name" 
+                                 placeholder="Adınızı yazın" 
                                  name="user_name"
                                  onChange={handleChange}
                                  required
@@ -71,9 +71,9 @@ const Contact = () => {
 
                             <div className="sm:w-[50%]">
                                 <input 
-                                className="w-full p-3 rounded-md bg-[#80808018] text-white placeholder:text-gray-400 border border-gray-800" 
+                                className="w-full rounded-xl border border-cyan-300/15 bg-[#0b2333]/70 p-3 text-white placeholder:text-slate-400" 
                                 type="email" 
-                                placeholder="Enter Your Email" 
+                                placeholder="E-posta adresinizi yazın" 
                                 name="user_email"
                                 onChange={handleChange}
                                 required
@@ -83,8 +83,8 @@ const Contact = () => {
 
                         <div>
                             <textarea 
-                            className="w-full p-3 rounded-md bg-[#80808018] text-white placeholder:text-gray-400 h-40 border border-gray-800" 
-                            placeholder="Write Your Message..."
+                            className="h-40 w-full rounded-xl border border-cyan-300/15 bg-[#0b2333]/70 p-3 text-white placeholder:text-slate-400" 
+                            placeholder="Mesajınızı yazın..."
                             name="message"
                             onChange={handleChange}
                             required
@@ -94,7 +94,7 @@ const Contact = () => {
                         <div>
                             <button 
                             type="submit"
-                            className="w-full p-3 rounded-md bg-[#80808018] text-white mt-4 border border-gray-800 hover:bg-gradient-to-r from-[#32116d] via-[#32116d] to-[#695582] transition" >Send Message</button>
+                            className="mt-4 w-full rounded-xl border border-cyan-300/25 bg-gradient-to-r from-[#0f2234] via-[#12324a] to-[#15546b] p-3 text-white transition hover:from-[#12324a] hover:via-[#15546b] hover:to-[#177b8b]" >Mesaj Gönder</button>
                         </div>
                     </form>
 
@@ -102,53 +102,53 @@ const Contact = () => {
 
                 <div className="lg:w-[48%] w-[90%] flex flex-col gap-5">
                     
-                    <div className="bg-[#80808018] h-[50%] flex flex-col justify-center items-center rounded-md p-4 lg:p-0">
-                        <div className="border-2 mx-auto border-dashed border-gray-400 rounded-full p-5 h-16 w-16 flex items-center justify-center">
+                    <div className="h-[50%] rounded-2xl border border-cyan-300/10 bg-[#0b2232]/72 p-4 lg:p-0 flex flex-col justify-center items-center">
+                        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-dashed border-cyan-300/45 p-5">
                             <div>
                                 <FaLocationDot className="mx-auto text-2xl"></FaLocationDot>
                             </div>
                         </div>
 
-                        <h1 className="text-center text-lg mt-2">Kishoregonj, Dhaka, Bangladesh</h1>
+                        <h1 className="text-center text-lg mt-2">Türkiye</h1>
                     </div>
 
 
                     <div className="h-[50%] flex sm:flex-row flex-col gap-5">
 
-                        <div className="lg:w-[50%] h-full flex flex-col items-center justify-center bg-[#80808018] p-3 rounded-md">
-                            <div className="border-2 mx-auto border-dashed border-gray-400 rounded-full p-5 h-16 w-16 flex items-center justify-center mb-5">
+                        <div className="lg:w-[50%] h-full flex flex-col items-center justify-center rounded-2xl border border-cyan-300/10 bg-[#0b2232]/72 p-3">
+                            <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-dashed border-cyan-300/45 p-5">
                                 <div>
                                     <FaBuildingCircleArrowRight className="mx-auto text-2xl"></FaBuildingCircleArrowRight>
                                 </div>
                             </div>
 
                             <div className="flex gap-5 items-center">
-                                <a href="https://web.facebook.com/mhrifat123" target="_blank">
-                                    <div className="h-10 w-10 border border-gray-500 flex items-center justify-center rounded-lg">
-                                        <FaFacebook className="text-2xl text-gray-500"></FaFacebook>
+                                <a href="https://cbilgin.com" target="_blank" rel="noreferrer">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-cyan-300/25 text-cyan-200">
+                                        <FaFacebook className="text-2xl"></FaFacebook>
                                     </div>
                                 </a>
-                                <a href="https://www.linkedin.com/in/mahmudul-hasan-rifat-3a8420318/" target="_blank">
-                                    <div className="h-10 w-10 border border-gray-500 flex items-center justify-center rounded-lg">
-                                        <FaLinkedinIn className="text-2xl text-gray-500"></FaLinkedinIn>
+                                <a href="https://cbilgin.com" target="_blank" rel="noreferrer">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-cyan-300/25 text-cyan-200">
+                                        <FaLinkedinIn className="text-2xl"></FaLinkedinIn>
                                     </div>
                                 </a>
-                                <a href="https://github.com/rifat-mahmudul" target="_blank">
-                                    <div className="h-10 w-10 border border-gray-500 flex items-center justify-center rounded-lg">
-                                        <FaGithub className="text-2xl text-gray-500"></FaGithub>
+                                <a href="https://cbilgin.com" target="_blank" rel="noreferrer">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-cyan-300/25 text-cyan-200">
+                                        <FaGithub className="text-2xl"></FaGithub>
                                     </div>
                                 </a>
                             </div>
                         </div>
 
-                        <div className="lg:w-[50%] lg:h-full flex flex-col items-center justify-center bg-[#80808018] p-3 rounded-md">
-                            <div className="border-2 mx-auto border-dashed border-gray-400 rounded-full p-5 h-16 w-16 flex items-center justify-center">
+                        <div className="lg:w-[50%] lg:h-full flex flex-col items-center justify-center rounded-2xl border border-cyan-300/10 bg-[#0b2232]/72 p-3">
+                            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-dashed border-cyan-300/45 p-5">
                                 <div>
                                     <MdOutlineMail className="mx-auto text-2xl"></MdOutlineMail>
                                 </div>
                             </div>
                             
-                            <h1 className="text-center text-sm mt-2">mahmudulhasanrifat220@gmail.com</h1>
+                            <h1 className="text-center text-sm mt-2">cbilginpoh@gmail.com</h1>
                         </div>
 
                     </div>

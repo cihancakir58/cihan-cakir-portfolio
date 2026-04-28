@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import BannerText from "./BannerText";
-import Rifat from "../../assets/Rifat.png";
+import CihanCakir from "../../assets/cihan-cakir.jpg";
 
 const Banner = () => {
 
@@ -63,7 +63,7 @@ const Banner = () => {
                 <div className="relative flex items-center justify-center mt-10 md:mt-0">
                     
                     <motion.div
-                        className="absolute w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
+                        className="absolute w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-full bg-gradient-to-r from-sky-500 via-cyan-400 to-teal-400"
                         variants={backgroundVariants}
                         animate="animate"
                         style={{
@@ -74,7 +74,7 @@ const Banner = () => {
 
                     {/* Border Animation */}
                     <motion.div
-                        className="absolute top-0 left-0 h-[350px] w-[350px] sm:h-[400px] sm:w-[400px] border-4 border-pink-600 rounded-full"
+                        className="absolute top-0 left-0 h-[350px] w-[350px] sm:h-[400px] sm:w-[400px] border-4 border-cyan-400/70 rounded-full"
                         variants={borderAnimation}
                         initial="hidden"
                         animate="visible"
@@ -86,7 +86,7 @@ const Banner = () => {
 
                     {/* Foreground Image */}
                     <motion.div
-                        className="relative border border-pink-600 rounded-full h-[300px] w-[300px] lg:h-[400px] lg:w-[400px] overflow-hidden shadow-xl transition-all duration-500 cursor-pointer"
+                        className="relative border border-cyan-300/70 rounded-full h-[300px] w-[300px] lg:h-[400px] lg:w-[400px] overflow-hidden shadow-[0_24px_60px_rgba(8,23,38,0.5)] transition-all duration-500 cursor-pointer"
                         variants={imageVariants}
                         initial="visible" 
                         animate="visible"
@@ -98,8 +98,8 @@ const Banner = () => {
                         
                         <motion.img
                             className="lg:h-[510px] w-[100%] object-cover object-center transition-all duration-500 mx-auto"
-                            src={Rifat}
-                            alt="Rifat"
+                            src={CihanCakir}
+                            alt="Cihan ÇAKIR"
                             drag
                             dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
                         />

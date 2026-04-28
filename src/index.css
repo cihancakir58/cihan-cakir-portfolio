@@ -7,3 +7,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-primary: #06131f;
+  --bg-secondary: #0d2233;
+  --bg-surface: rgba(12, 29, 45, 0.78);
+  --text-primary: #f3fbff;
+  --text-secondary: #b7c8d6;
+  --accent-primary: #2dd4bf;
+  --accent-secondary: #38bdf8;
+  --accent-deep: #0f766e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(45, 212, 191, 0.12), transparent 28%),
+    linear-gradient(180deg, #04111b 0%, #071926 45%, #0b2030 100%);
+  min-height: 100vh;
+}
+
+a {
+  transition: color 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}

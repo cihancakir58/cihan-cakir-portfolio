@@ -1,103 +1,75 @@
 /* eslint-disable react/prop-types */
-import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
-import { TbWorldShare } from "react-icons/tb";
+import { FaApple, FaGlobe, FaGooglePlay } from "react-icons/fa";
 import SpotlightCard from "../Animation/SpotlightCard";
 
-const ProjectCard = ({ project }) => {
+const storeIcons = {
+    ios: <FaApple className="text-xl" />,
+    android: <FaGooglePlay className="text-lg" />,
+    web: <FaGlobe className="text-lg" />,
+};
 
-    const { name, description, image, type, ClientRepository, ServerRepository, technologies, link } = project;
+const ProjectCard = ({ project }) => {
+    const { name, description, icon, type, technologies = [], stores = [] } = project;
 
     return (
-        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
-
-            <div className="flex lg:flex-row flex-col gap-10 items-start">
-                        <motion.div
-                            className="overflow-hidden h-[400px] w-[60%] relative rounded-lg"
-                            style={{
-                                height: "300px",
-                                width: "100%",
-                                overflow: "hidden",
-                                position: "relative",
-                            }}
-                        >
-                            <motion.img
-                                src={image}
-                                alt={name}
-                                className="absolute top-0 left-0 w-full"
-                                style={{ height: "auto", width: "100%" }}
-                                initial={{ y: 0 }}
-                                whileHover={{ y: "-100%" }}
-                                transition={{ duration: 0.8, ease: "easeInOut" }}
+        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(45, 212, 191, 0.18)">
+            <div className="flex flex-col lg:flex-row gap-8 items-start">
+                <div className="w-full lg:w-auto flex justify-center">
+                    <div className="relative">
+                        <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-sky-400/30 via-cyan-300/20 to-transparent blur-2xl" />
+                        <div className="relative h-36 w-36 rounded-[2rem] overflow-hidden border border-cyan-300/20 bg-[#0c2234]/80 shadow-2xl">
+                            <img
+                                src={icon}
+                                alt={`${name} logosu`}
+                                className="h-full w-full object-cover"
                             />
-                        </motion.div>
-
-                    {/* Description */}
-                        <div>
-                            
-                            <div className="flex lg:flex-row flex-col lg:items-start lg:justify-between text-pink-500">
-                                <h1 className="text-3xl font-russo mb-4 bg-gradient-to-r text-transparent bg-clip-text from-sky-400 via-pink-400 to-pink-500">{name}</h1>
-
-                                <p>{type}</p>
-                            </div>
-
-                            <p className="text-gray-300">{description}</p>
-
-                            <div className="mt-5 sm:flex items-center gap-14">
-
-                                <div>
-                                    <a href={ClientRepository} target="_blank">
-                                        <div className="border rounded-full h-14 w-14 flex items-center justify-center">
-                                            <FaGithub className="text-4xl"></FaGithub>
-                                        </div>
-                                    </a>
-
-                                    <p className="h-14 w-14 mt-1 font-semibold text-center">Client</p>
-                                </div>
-
-                                <div>
-                                    <a href={ServerRepository} target="_blank">
-                                        <div className="border rounded-full h-14 w-14 flex items-center justify-center">
-                                            <FaGithub className="text-4xl"></FaGithub>
-                                        </div>
-                                    </a>
-
-                                    <p className="h-14 w-14 mt-1 font-semibold text-center">Server</p>
-                                </div>
-
-                                <div>
-                                    <a href={link} target="_blank">
-                                        <div className="border rounded-full h-14 w-14 flex items-center justify-center">
-                                            <TbWorldShare className="text-4xl text-blue-500"></TbWorldShare>
-                                        </div>
-                                    </a>
-
-                                    <p className="h-14 w-14 mt-1 font-semibold text-center">Live</p>
-                                </div>
-
-                            </div>
-
-
-                            <div className="grid sm:grid-cols-5 gap-5">
-                                {
-                                    technologies.map((tech, index) => (
-                                        <div key={index}>
-
-                                            <div className="rounded-3xl text-center py-2 px-5 text-blue-600 font-bold text-lg bg-[#0000ff1c]">
-                                                <h1>{tech}</h1>
-                                            </div>
-
-                                        </div>
-                                    ))
-                                }
-                            </div>
-
                         </div>
+                    </div>
+                </div>
+
+                <div className="flex-1">
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3">
+                        <div>
+                            <p className="text-sm uppercase tracking-[0.35em] text-cyan-200/80">{type}</p>
+                            <h2 className="mt-2 text-3xl font-russo bg-gradient-to-r text-transparent bg-clip-text from-cyan-200 via-sky-300 to-white">
+                                {name}
+                            </h2>
+                        </div>
+                    </div>
+
+                    <p className="mt-4 text-gray-300 leading-7">{description}</p>
+
+                    <div className="mt-6 flex flex-wrap gap-3">
+                        {stores.map((store) => (
+                            <a
+                                key={store.url}
+                                href={store.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-3 rounded-2xl border border-cyan-300/15 bg-[#0c2234]/75 px-4 py-3 text-sm font-semibold text-white transition hover:border-cyan-300/60 hover:bg-cyan-400/10"
+                            >
+                                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-400/10 text-cyan-200">
+                                    {storeIcons[store.platform]}
+                                </span>
+                                {store.label}
+                            </a>
+                        ))}
+                    </div>
+
+                    <div className="mt-6 flex flex-wrap gap-3">
+                        {technologies.map((tech) => (
+                            <span
+                                key={tech}
+                                className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100"
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </div>
             </div>
-
-        
         </SpotlightCard>
-    )
-}
+    );
+};
 
-export default ProjectCard
+export default ProjectCard;

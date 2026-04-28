@@ -1,55 +1,61 @@
 import {
-    FaFacebook,
+    FaEnvelope,
     FaGithub,
-    FaInstagram,
+    FaGlobe,
     FaLinkedinIn,
     FaTwitter,
 } from "react-icons/fa";
-import { Link } from "react-router";
-    
-    const Social = () => {
-        return (
+
+const Social = () => {
+    return (
         <div className="flex gap-4 *:border *:border-[#315779] *:cursor-pointer *:size-[40px] *:rounded-full *:bg-[#0E161E] *:text-white *:flex *:justify-center *:items-center ">
-            <Link
-            className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
-            to="https://web.facebook.com/mhrifat123"
-            target="_blank"
+            <a
+                className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
+                href="https://cbilgin.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="cbilgin.com"
             >
-            <FaFacebook></FaFacebook>
-            </Link>
-    
-            <Link
-            className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
-            to="https://www.linkedin.com/in/mahmudul-hasan-rifat-dev25/"
-            target="_blank"
+                <FaGlobe />
+            </a>
+
+            <a
+                className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
+                href="http://sivascu.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="sivascu.com"
             >
-            <FaLinkedinIn></FaLinkedinIn>{" "}
-            </Link>
-    
-            <Link 
-            className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
-            to="https://x.com/rifat67661" 
-            target="_blank"
+                <FaLinkedinIn />
+            </a>
+
+            <a
+                className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
+                href="https://jspsinav.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="jspsinav.com"
             >
-            <FaTwitter></FaTwitter>
-            </Link>
-    
-            <Link 
-            className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
-            to="https://www.instagram.com/mahmudulhasan3891/" 
-            target="_blank"
+                <FaTwitter />
+            </a>
+
+            <a
+                className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
+                href="mailto:cbilginpoh@gmail.com"
+                aria-label="E-posta"
             >
-            <FaInstagram></FaInstagram>
-            </Link>
-    
-            <Link 
-            className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
-            to="https://github.com/rifat-mahmudul"
-            target="_blank">
-            <FaGithub></FaGithub>
-            </Link>
+                <FaEnvelope />
+            </a>
+
+            <a
+                className="hover:bg-[#32116d] transition duration-300 hover:rotate-360 hover:scale-110"
+                href="tel:+905318743367"
+                aria-label="Telefon"
+            >
+                <FaGithub />
+            </a>
         </div>
-        );
-    };
-    
-    export default Social;
+    );
+};
+
+export default Social;
